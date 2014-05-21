@@ -17,7 +17,7 @@ IE6+、Chrome、Firefox、Safari、Opera等浏览器
 ###参数
 
 ````
-	Tick.to(element,props,type,speed,callback.callbackParams)
+	Tick.to(element,props,type,speed,,delay,callback.callbackParams)
 ````
 
 ####例子：
@@ -32,21 +32,21 @@ IE6+、Chrome、Firefox、Safari、Opera等浏览器
 			console.log("done")
 		},
 		onCompleteParams:[]
-   },"easeInOutBack",1000);
+   },"easeInOutBack",1000,500);
    
 ````
 
 ###API
 
 ````
-	Tick.to(element,props,type,speed,callback.callbackParams)
+	Tick.to(element,props,type,speed,delay,callback.callbackParams)
 ````
 
 ````
-	Tick.from(element,props,type,speed,callback.callbackParams)
+	Tick.from(element,props,type,speed,delay,callback.callbackParams)
 ````
 
 ````
-	Tick.fromTo(element,tProps,fProps,type,speed,callback.callbackParams)
+	Tick.fromTo(element,tProps,fProps,type,speed,delay,callback.callbackParams)
 ````
 
