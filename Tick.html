@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-size: 12px;
+        }
+        #circle{
+            width:100px;
+            height:100px;
+            background: red;
+            position:absolute;
+            left:0px;
+            top:0px;
+            border-radius:50px;
+            filter:alpha(opacity = 10);
+        }
+        #wrap{
+            width:500px;
+            height:500px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap"></div>
+<div id="circle"></div>
+
+</body>
+<script src="Tick.js"></script>
+<script>
+    var circle = document.getElementById("circle");
+//    Tick.to(circle,{
+//        left:400,
+//        onComplete:function(){
+//            console.log("ok")
+//        }
+//    },"easeOutQuint");
+    Tick.from(circle,{
+        left:400,
+        onComplete:function(){
+            console.log("ok")
+        }
+    },"easeInCubic");
+//    Tick.fromTo(circle,{
+//        left:200,
+//        top:50
+//    },{
+//        left:400,
+//        onComplete:function(){
+//            console.log("ok")
+//        }
+//    },"easeOutQuint");
+</script>
+</html>
