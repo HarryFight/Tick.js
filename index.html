@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Tick.js : 轻量级运动库">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Tick.js</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/HarryFight/Tick.js">View on GitHub</a>
+
+          <h1 id="project_title">Tick.js</h1>
+          <h2 id="project_tagline">轻量级运动库</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/HarryFight/Tick.js/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/HarryFight/Tick.js/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="tickjs" class="anchor" href="#tickjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tick.js</h1>
+
+<p>a lightweight animation library for javascript</p>
+
+<h1>
+<a id="1简介" class="anchor" href="#1%E7%AE%80%E4%BB%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.简介</h1>
+
+<p>Tick.js -- 轻量级的动画库</p>
+
+<h1>
+<a id="2兼容性" class="anchor" href="#2%E5%85%BC%E5%AE%B9%E6%80%A7" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.兼容性</h1>
+
+<p>IE6+、Chrome、Firefox、Safari、Opera等浏览器</p>
+
+<h1>
+<a id="3使用" class="anchor" href="#3%E4%BD%BF%E7%94%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.使用</h1>
+
+<h3>
+<a id="参数" class="anchor" href="#%E5%8F%82%E6%95%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>参数</h3>
+
+<pre><code>    Tick.to(element,props,type,speed,,delay,callback.callbackParams)
+</code></pre>
+
+<h4>
+<a id="例子" class="anchor" href="#%E4%BE%8B%E5%AD%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>例子：</h4>
+
+<pre><code>   Tick.to(element,{
+        left:400,
+        top:400,
+        width:200,
+        height:200,
+        onComplete:function(){
+            console.log("done")
+        },
+        onCompleteParams:[]
+   },"easeInOutBack",1000,500);
+
+</code></pre>
+
+<h3>
+<a id="api" class="anchor" href="#api" aria-hidden="true"><span class="octicon octicon-link"></span></a>API</h3>
+
+<pre><code>    Tick.to(element,props,type,speed,delay,callback.callbackParams)
+</code></pre>
+
+<pre><code>    Tick.from(element,props,type,speed,delay,callback.callbackParams)
+</code></pre>
+
+<pre><code>    Tick.fromTo(element,tProps,fProps,type,speed,delay,callback.callbackParams)
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Tick.js maintained by <a href="https://github.com/HarryFight">HarryFight</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
