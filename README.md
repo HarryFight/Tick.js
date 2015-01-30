@@ -3,6 +3,7 @@ Tick.js
 
 a lightweight animation library for javascript
 
+[观看演示]( http://harryfight.github.io/Tick.js.)
 
 #1.简介
 Tick.js -- 轻量级的动画库
